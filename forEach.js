@@ -1,6 +1,17 @@
 function doubleValues(arr) {
-    arr.forEach(function(item,index){
-        arr[index]= item*2;
+    let newArr = Array.from(arr);
+    newArr.forEach(function(item,index){
+        newArr[index]= item*2;
     })
-    return arr;
+    return newArr;
+};
+
+function onlyEvenValues(arr) {
+    let newArr=[];
+    arr.forEach(function(item){
+        if ((item % 2) == 0){
+             newArr.push(item);
+        };
+    });
+    return newArr;
 };

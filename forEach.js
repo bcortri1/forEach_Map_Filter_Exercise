@@ -15,3 +15,12 @@ function onlyEvenValues(arr) {
     });
     return newArr;
 };
+
+function showFirstAndLast(arr){
+    let newArr=[];
+    arr.forEach(function(item){
+        newArr.push(item.charAt(0) + item.charAt(item.length-1));
+    });
+
+    return newArr;
+};

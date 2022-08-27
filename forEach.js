@@ -32,7 +32,7 @@ function addKeyAndValue(arr, key, value){
     return arr;
 };
 
-function vowCount(str){
+function vowelCount(str){
     let vowels = ['a','e','i','o','u']
     let vObject = {};
     str = str.toLowerCase();

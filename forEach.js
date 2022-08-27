@@ -24,3 +24,10 @@ function showFirstAndLast(arr){
 
     return newArr;
 };
+
+function addKeyAndValue(arr, key, value){
+    arr.forEach(function(item,index){
+        arr[index][key] = value;
+    });
+    return arr;
+}

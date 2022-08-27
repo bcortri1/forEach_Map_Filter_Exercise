@@ -30,4 +30,21 @@ function addKeyAndValue(arr, key, value){
         arr[index][key] = value;
     });
     return arr;
-}
+};
+
+function vowCount(str){
+    let vowels = ['a','e','i','o','u']
+    let vObject = {};
+    str = str.toLowerCase();
+    Array.from(str).forEach(function(sItem){
+        vowels.forEach(function(vItem){
+            if(sItem==vItem){
+                if(vObject[vItem] == undefined){
+                    vObject[vItem] = 0
+                };
+                vObject[vItem] = Number(vObject[vItem]) + 1;
+            }
+        });
+    });
+    return vObject;
+};
